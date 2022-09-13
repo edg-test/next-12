@@ -1,5 +1,5 @@
 {
-  "name": "layer0-nextjs-example",
+  "name": "layer0-nextjs-12-example",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -11,18 +11,18 @@
     "format": "prettier '**/*' --write --ignore-unknown"
   },
   "dependencies": {
-    "next": "^12.2.4",
+    "next": "12.3.0",
     "react": "^18.0.1",
     "react-dom": "^18.0.1"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.6",
-    "@layer0/cli": "^4.18.2",
-    "@layer0/core": "^4.18.2",
-    "@layer0/devtools": "^4.18.2",
-    "@layer0/next": "^4.18.2",
-    "@layer0/prefetch": "^4.18.2",
-    "@layer0/react": "^4.18.2",
+    "@layer0/cli": "^4.18.9",
+    "@layer0/core": "^4.18.9",
+    "@layer0/devtools": "^4.18.9",
+    "@layer0/next": "^4.18.9",
+    "@layer0/prefetch": "^4.18.9",
+    "@layer0/react": "^4.18.9",
     "@layer0/rum": "^3.1.0",
     "autoprefixer": "^10.4.7",
     "classnames": "^2.3.1",

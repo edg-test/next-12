@@ -46,6 +46,14 @@ if (isProductionBuild()) {
   // it on the edge so that can be prefetched
   router.match('/_next/data/:path*', NEXT_CACHE_HANDLER)
 
+  router.match('/api/:path*',({ removeUpstreamResponseHeader, cache}) => {
+      removeUpstreamResponseHeader('cache-control')
+      cache({
+        browser: false,
+        edge: false,
+      })
+    })
+
   // Cache but not in 0 dev mode
   router.match('/', NEXT_CACHE_HANDLER)
   router.match('/about', NEXT_CACHE_HANDLER)
